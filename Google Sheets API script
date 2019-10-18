@@ -1,5 +1,5 @@
 function ethCurrentPrice() {
-  var res = UrlFetchApp.fetch("https://api.etherscan.io/api?module=stats&action=ethprice&apikey=9PFG6U3B5UWDIEMYKP6B91EHZ7KB1A9YPD");
+  var res = UrlFetchApp.fetch("https://api.etherscan.io/api?module=stats&action=ethprice&apikey=ENTERYOURAPIKEYHERE");
   var content = res.getContentText();
   var json = JSON.parse(content);
   var ethusd = json["result"]["ethusd"];
